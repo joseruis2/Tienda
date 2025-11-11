@@ -194,3 +194,4 @@ C:\Users\Jose\Desktop\PracticasCasa\Tienda\Tienda\bin\Debug\net9.0\zh-Hans\Micro
 C:\Users\Jose\Desktop\PracticasCasa\Tienda\Tienda\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Jose\Desktop\PracticasCasa\Tienda\Tienda\obj\Debug\net9.0\Tienda.csproj.AssemblyReference.cache
 C:\Users\Jose\Desktop\PracticasCasa\Tienda\Tienda\obj\Debug\net9.0\Tienda.csproj.Up2Date
+C:\Users\Jose\Desktop\PracticasCasa\Tienda\Tienda\obj\Debug\net9.0\Tienda.sourcelink.json

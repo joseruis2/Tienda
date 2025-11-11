@@ -1,0 +1,70 @@
+﻿@model Tienda.ViewModels.CategoriaViewModel
+
+@{
+    ViewData["Title"] = "Crear Categoria";
+    Layout = "_Layout";
+}
+
+<h2>Nueva Categoría</h2>
+
+<form asp-action="Crear" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>  <!-- 👈 AQUI se muestran los errores globales -->
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label"></label>
+        <textarea asp-for="Descripcion" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="imagenArchivo" class="form-label">Imagen</label>
+        <!-- ✅ input con id para el script -->
+        <input type="file" id="imagenArchivo" name="imagenArchivo" class="form-control" accept="image/*" />
+    </div>
+
+    <!-- ✅ Vista previa (oculta por defecto) -->
+    <div class="mb-3 text-center">
+        <img id="previewImagen" src="#" alt="Vista previa"
+             style="max-width: 200px; display: none;"
+             class="img-thumbnail rounded shadow-sm" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Estado" class="form-label">Estado</label>
+        <select asp-for="Estado" class="form-select">
+            <option value="true">Activo</option>
+            <option value="false">Inactivo</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <script>
+        // ✅ Script para mostrar vista previa de imagen seleccionada
+        const inputImagen = document.getElementById('imagenArchivo');
+        const preview = document.getElementById('previewImagen');
+
+        inputImagen.addEventListener('change', function (event) {
+            const archivo = event.target.files[0];
+            if (archivo) {
+                const lector = new FileReader();
+                lector.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                lector.readAsDataURL(archivo);
+            } else {
+                preview.src = '#';
+                preview.style.display = 'none';
+            }
+        });
+    </script>
+}

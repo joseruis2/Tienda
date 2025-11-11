@@ -7,11 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Helpers\" />
     <Folder Include="Filters\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+    <Folder Include="wwwroot\images\categorias\" />
   </ItemGroup>
 
   <ItemGroup>

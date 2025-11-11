@@ -1,35 +1,50 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Tienda.Models;
+using Tienda.Repositories;
+using Tienda.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✅ Agrega los servicios ANTES de Build()
+
+// MVC
 builder.Services.AddControllersWithViews();
 
-// DB,Lee la cadena de conexi�n "DefaultConnection"
+// ✅ Conexión a la base de datos
 builder.Services.AddDbContext<TiendadbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 29)) //la versi�n de MySQL
+        new MySqlServerVersion(new Version(8, 0, 29))
     ));
 
+// ✅ Inyección de dependencias (Repositorios y Servicios)
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+
+
+
+// ✅ Ahora sí, construimos la app
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//Permite Usar  Imagen
+app.UseStaticFiles();
+
+// Pipeline HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
+// Rutas
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Categoria}/{action=Index}/{id?}"
+);
 
 app.Run();
