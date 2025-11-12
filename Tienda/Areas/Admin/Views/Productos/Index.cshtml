@@ -1,0 +1,53 @@
+﻿@using Tienda.Areas.Admin.ViewModels
+@model List<ProductosViewModels>
+
+@{
+    ViewData["Title"] = "Inicio del Producto";
+    Layout = "_Layout";
+}
+
+    <h2>Productos</h2>
+    <a asp-action="Crear" class="btn btn-primary mb-3">Nuevo Producto</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.ImagenPrincipal))
+                        {
+                            <img src="~/images/productos/@item.ImagenPrincipal" width="60" class="rounded" />
+                        }
+                        else
+                        {
+                            <span>Sin imagen</span>
+                        }
+                    </td>
+                    <td>@item.Codigo</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.CategoriaNombre</td>
+                    <td>@item.Precio.ToString("C")</td>
+                    <td>@item.StockActual</td>
+                    <td>@(item.Estado ? "Activo" : "Inactivo")</td>
+                    <td>
+                        <a asp-action="Detalles" asp-route-id="@item.ProductoId" class="btn btn-info btn-sm">Detalles</a>
+                        <a asp-action="Editar" asp-route-id="@item.ProductoId" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-action="Eliminar" asp-route-id="@item.ProductoId" class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,30 @@
+﻿@using Tienda.Areas.Admin.ViewModels
+@model ProductosViewModels
+
+@{
+    ViewData["Title"] = "Detalles del producto";
+    Layout = "_Layout";
+
+}
+
+<h2>Detalles del Producto</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h4>@Model.Nombre</h4>
+        <p><strong>Código:</strong> @Model.Codigo</p>
+        <p><strong>Descripción:</strong> @Model.Descripcion</p>
+        <p><strong>Categoría:</strong> @Model.CategoriaNombre</p>
+        <p><strong>Precio:</strong> @Model.Precio.ToString("C")</p>
+        <p><strong>Stock:</strong> @Model.StockActual</p>
+        <p><strong>Unidad:</strong> @Model.UnidadMedida</p>
+        <p><strong>Estado:</strong> @(Model.Estado ? "Activo" : "Inactivo")</p>
+
+        @if (!string.IsNullOrEmpty(Model.ImagenPrincipal))
+        {
+            <img src="~/images/productos/@Model.ImagenPrincipal" width="150" />
+        }
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Volver</a>

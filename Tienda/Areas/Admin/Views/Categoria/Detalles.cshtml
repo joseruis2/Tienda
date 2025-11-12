@@ -1,0 +1,28 @@
+﻿@using Tienda.Areas.Admin.ViewModels
+@model CategoriaViewModel
+
+@{
+    ViewData["Title"] = "Detalles de la Categoria";
+    Layout = "_Layout";
+}
+
+<h2>Detalles de Categoría</h2>
+
+<div class="mb-3">
+    <strong>Nombre:</strong> @Model.Nombre
+</div>
+
+<div class="mb-3">
+    <strong>Descripción:</strong> @Model.Descripcion
+</div>
+
+<div class="mb-3">
+    <strong>Estado:</strong> @(Model.Estado == true ? "Activo" : "Inactivo")
+</div>
+
+<div class="mb-3">
+    <strong>Fecha de creación:</strong> @Model.FechaCreacion?.ToString("dd/MM/yyyy HH:mm")
+</div>
+
+<a asp-action="Editar" asp-route-id="@Model.CategoriaId" class="btn btn-warning">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Volver</a>

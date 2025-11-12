@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Tienda.Areas.Admin.Repository;
+using Tienda.Areas.Admin.Services;
 using Tienda.Models;
-using Tienda.Repositories;
-using Tienda.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,10 +41,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// Rutas
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Categoria}/{action=Index}/{id?}"
+app.MapAreaControllerRoute(
+    name: "AdminArea",
+    areaName: "Admin",
+    pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}"
 );
+
+
 
 app.Run();

@@ -1,0 +1,30 @@
+﻿@using Tienda.Areas.Admin.ViewModels
+@model ProductosViewModels
+
+@{
+    ViewData["Title"] = "Eliminar este producto";
+    Layout = "_Layout";
+}
+
+<h2>Eliminar Producto</h2>
+
+<p>¿Estás seguro de que deseas eliminar este producto?</p>
+
+<div class="card">
+    <div class="card-body">
+        <h4>@Model.Nombre</h4>
+        <p><strong>Código:</strong> @Model.Codigo</p>
+        <p><strong>Categoría:</strong> @Model.CategoriaNombre</p>
+        <p><strong>Precio:</strong> @Model.Precio.ToString("C")</p>
+        @if (!string.IsNullOrEmpty(Model.ImagenPrincipal))
+        {
+            <img src="~/images/productos/@Model.ImagenPrincipal" width="100" />
+        }
+    </div>
+</div>
+
+<form asp-action="Eliminar" method="post">
+    <input type="hidden" asp-for="ProductoId" />
+    <button type="submit" class="btn btn-danger mt-3">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Cancelar</a>
+</form>

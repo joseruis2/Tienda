@@ -1,0 +1,53 @@
+﻿@using Tienda.Areas.Admin.ViewModels
+@model List<CategoriaViewModel>
+
+@{
+    ViewData["Title"] = "Inicio Categoria";
+    Layout = "_Layout";
+}
+
+<h2>Categorías</h2>
+<a asp-action="Crear" class="btn btn-primary mb-3">Nueva Categoría</a>
+
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+                <td>@item.Descripcion</td>
+                <td>@(item.Estado == true ? "Activo" : "Inactivo")</td>
+                <td>
+                    <a asp-action="Detalles" asp-route-id="@item.CategoriaId" class="btn btn-info btn-sm">Detalles</a>
+                    <a asp-action="Editar" asp-route-id="@item.CategoriaId" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Eliminar" asp-route-id="@item.CategoriaId" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Imagen))
+                    {
+                        <img src="~/images/categorias/@item.Imagen" asp-append-version="true" width="80" class="rounded" />
+
+
+                    }
+                    else
+                    {
+                        <span>Sin imagen</span>
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\views\\productos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\views\\productos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,51 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Detalles.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Productos\\Detalles.cshtml",
-              "RelativeDocumentMoniker": "Tienda\\Views\\Productos\\Detalles.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Productos\\Detalles.cshtml",
-              "RelativeToolTip": "Tienda\\Views\\Productos\\Detalles.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T04:14:53.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Productos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Tienda\\Views\\Productos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Productos\\Index.cshtml",
-              "RelativeToolTip": "Tienda\\Views\\Productos\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T04:13:24.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Categoria\\Index.cshtml",
-              "RelativeDocumentMoniker": "Tienda\\Views\\Categoria\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Views\\Categoria\\Index.cshtml",
-              "RelativeToolTip": "Tienda\\Views\\Categoria\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T04:13:17.92Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "Tienda\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "Tienda\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAABSAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Program.cs",
+              "RelativeDocumentMoniker": "Tienda\\Program.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Program.cs",
+              "RelativeToolTip": "Tienda\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T04:10:20.048Z",
+              "WhenOpened": "2025-11-12T00:50:36.695Z",
               "EditorCaption": ""
             }
           ]
