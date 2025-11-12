@@ -9,6 +9,10 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Public\Controllers\" />
+    <Folder Include="Areas\Public\Data\" />
+    <Folder Include="Areas\Public\Models\" />
+    <Folder Include="Areas\Public\Views\" />
     <Folder Include="Helpers\" />
     <Folder Include="Filters\" />
     <Folder Include="Repositories\" />
