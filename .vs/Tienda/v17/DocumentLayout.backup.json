@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T02:22:42.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Program.cs",
               "RelativeDocumentMoniker": "Tienda\\Program.cs",
