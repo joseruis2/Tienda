@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\views\\shared\\_layoutpublic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\views\\shared\\_layoutpublic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\public\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\public\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\areas\\admin\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\areas\\admin\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|c:\\users\\jose\\desktop\\practicascasa\\tienda\\tienda\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CF65F-6D81-4E7E-B50B-C491D05FF4CA}|Tienda\\Tienda.csproj|solutionrelative:tienda\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +54,90 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductosController.cs",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
-              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
-              "RelativeToolTip": "Tienda\\Areas\\Public\\Controllers\\ProductosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T02:22:42.433Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Tienda\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T06:59:25.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Program.cs",
-              "RelativeDocumentMoniker": "Tienda\\Program.cs",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Program.cs",
-              "RelativeToolTip": "Tienda\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC4AAAArAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "_LayoutPublic.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Shared\\_LayoutPublic.cshtml",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Views\\Shared\\_LayoutPublic.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Shared\\_LayoutPublic.cshtml",
+              "RelativeToolTip": "Tienda\\Areas\\Public\\Views\\Shared\\_LayoutPublic.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T03:58:38.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Admin\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Admin\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Admin\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Tienda\\Areas\\Admin\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAUwO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:50:36.695Z",
+              "WhenOpened": "2025-11-15T00:21:25.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Producto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Views\\Producto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Producto\\Index.cshtml",
+              "RelativeToolTip": "Tienda\\Areas\\Public\\Views\\Producto\\Index.cshtml",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAmwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T00:29:50.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Tienda\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Models\\Producto.cs",
+              "RelativeToolTip": "Tienda\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T00:17:59.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Tienda\\Areas\\Public\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T00:17:00.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Tienda\\Areas\\Public\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\PracticasCasa\\Tienda\\Tienda\\Areas\\Public\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Tienda\\Areas\\Public\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowHQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T00:16:25.273Z",
               "EditorCaption": ""
             }
           ]

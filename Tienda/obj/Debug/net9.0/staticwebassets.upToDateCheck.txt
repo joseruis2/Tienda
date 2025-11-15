@@ -2,11 +2,13 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\bodega.jpg
 wwwroot\images\categorias\1966d71e-0d08-411b-9356-e458f4f7e934.png
+wwwroot\images\categorias\40af5cbd-277a-4388-9f48-e9ab3c475053.jpg
 wwwroot\images\categorias\6347808b-85da-4da1-9982-ea178dc280f9.png
 wwwroot\images\categorias\6b20dc55-ea30-486c-aafc-5a1730c1c93f.png
 wwwroot\images\categorias\6d7fba3b-78cd-4b8b-a675-48a2bf5c3313.png
 wwwroot\images\categorias\86aec9d4-fc0c-40d0-bccc-73cf031f295b.png
 wwwroot\images\categorias\8f0babc1-13b8-45d4-807d-74fef7b5956d.png
+wwwroot\images\categorias\a09816f4-ebd0-4864-b3ab-44f6ea1a9465.png
 wwwroot\images\categorias\a7284a80-8862-436d-a88d-509b1eecb8d8.png
 wwwroot\images\categorias\d3057a28-5bd9-4cae-b53e-85bff2a41894.png
 wwwroot\images\productos\098f5dab-7b53-4274-97ef-8845f7a90efa.png

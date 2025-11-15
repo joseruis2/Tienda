@@ -47,6 +47,12 @@ app.MapAreaControllerRoute(
     pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}"
 );
 
+app.MapAreaControllerRoute(
+    name: "PublicArea",
+    areaName: "Public",
+    pattern: "{area=Public}/{controller=Productos}/{action=Index}/{id?}"
+);
+
 
 
 app.Run();

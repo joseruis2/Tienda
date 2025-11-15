@@ -1,0 +1,183 @@
+﻿@{
+    ViewData["Title"] = "Productos";
+    Layout = "~/Areas/Public/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div class="row mb-4">
+    <!-- 🧩 Sidebar Categorías -->
+    <div class="col-md-3">
+        <h5 class="mb-3">Categorías</h5>
+        <ul class="list-group" id="lista-categorias">
+            <li class="list-group-item active" data-id="">Todas</li>
+            @foreach (var cat in ViewBag.Categorias)
+            {
+                <li class="list-group-item" data-id="@cat.CategoriaId">@cat.Nombre</li>
+            }
+        </ul>
+    </div>
+
+    <!-- 🧩 Contenido principal -->
+    <div class="col-md-9">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="mb-0">Productos</h3>
+
+            <!-- 🔍 Buscador -->
+            <div class="d-flex">
+                <input type="text" id="buscar" class="form-control me-2"
+                       placeholder="Buscar productos..." />
+                <button class="btn btn-primary" id="btnBuscar">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 🧱 Contenedor de productos -->
+        <div class="row" id="productos-container">
+            <div class="col-12 text-center py-5">
+                <p class="text-muted">Cargando productos...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🟦 Modal Detalles -->
+<div class="modal fade" id="modalDetalles" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Detalles del Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img id="det-imagen"
+                             src=""
+                             class="img-fluid rounded shadow-sm"
+                             style="max-height:300px;object-fit:cover;">
+                    </div>
+
+                    <div class="col-md-7">
+                        <h4 id="det-nombre"></h4>
+                        <p class="text-muted">Categoría: <span id="det-categoria"></span></p>
+
+                        <p class="fw-bold text-success fs-4">
+                            S/. <span id="det-precio"></span>
+                        </p>
+
+                        <p><strong>Código:</strong> <span id="det-codigo"></span></p>
+                        <p><strong>Stock actual:</strong> <span id="det-stock"></span></p>
+
+                        <p class="mt-3" id="det-descripcion"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let categoriaId = null;
+        const inputBuscar = document.getElementById('buscar');
+        const contenedor = document.getElementById('productos-container');
+        const listaCategorias = document.getElementById('lista-categorias');
+
+        // 🔹 Renderiza los productos dinámicamente
+        function renderProductos(productos) {
+            if (productos.length === 0) {
+                contenedor.innerHTML = `<div class="col-12 text-center py-5 text-muted">No se encontraron productos.</div>`;
+                return;
+            }
+
+            contenedor.innerHTML = productos.map(p => `
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/images/productos/${p.imagen}" class="card-img-top" style="height:200px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">${p.nombre}</h5>
+                            <p class="card-text text-muted">${p.categoria}</p>
+                            <p class="fw-bold text-success">S/. ${p.precio}</p>
+
+                                    <a href="#" class="btn btn-outline-primary w-100 btn-detalles" data-id="${p.id}">
+            Ver Detalles
+        </a>
+
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 🔹 Llama al backend usando Fetch
+        async function cargarProductos() {
+            const buscar = inputBuscar.value.trim();
+            const params = new URLSearchParams({
+                categoriaId: categoriaId || '',
+                buscar: buscar || ''
+            });
+
+            const response = await fetch(`/Public/Producto/Filtrar?${params.toString()}`);
+            const data = await response.json();
+            renderProductos(data);
+        }
+
+        // 🟢 Inicializa
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarProductos();
+
+            // Clic en categorías
+            listaCategorias.addEventListener('click', e => {
+                const li = e.target.closest('li');
+                if (!li) return;
+                listaCategorias.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+                li.classList.add('active');
+                categoriaId = li.dataset.id || null;
+                cargarProductos();
+            });
+
+            // Buscar al hacer clic
+            document.getElementById('btnBuscar').addEventListener('click', cargarProductos);
+
+            // Buscar mientras escribe (con retardo)
+            let typingTimer;
+            inputBuscar.addEventListener('keyup', () => {
+                clearTimeout(typingTimer);
+                typingTimer = setTimeout(cargarProductos, 400);
+            });
+        });
+
+
+                // 🔵 Abrir Modal de Detalles
+        document.addEventListener('click', async function (e) {
+            if (e.target.classList.contains('btn-detalles')) {
+                e.preventDefault();
+
+                const id = e.target.dataset.id;
+
+                const response = await fetch(`/Public/Producto/Detalles?id=${id}`);
+                const p = await response.json();
+
+                // Rellenar datos en el modal
+                document.getElementById('det-imagen').src = `/images/productos/${p.imagen}`;
+                document.getElementById('det-nombre').innerText = p.nombre;
+                document.getElementById('det-categoria').innerText = p.categoria;
+                document.getElementById('det-precio').innerText = p.precio;
+                document.getElementById('det-codigo').innerText = p.codigo;
+                document.getElementById('det-stock').innerText = p.stock;
+                document.getElementById('det-descripcion').innerText = p.descripcion;
+
+                // Mostrar modal
+                new bootstrap.Modal(document.getElementById('modalDetalles')).show();
+            }
+        });
+
+    </script>
+ }
+    
+

@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+    Layout = "~/Areas/Public/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<style>
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000' %3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000' %3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+</style>
+
+<div class="container py-4">
+    <h2 class="mb-4 text-center">Productos Recientes</h2>
+
+    <!-- Carrusel -->
+    <div id="productosCarousel" class="carousel slide" data-bs-ride="true" data-bs-interval="3000">
+        <div class="carousel-inner">
+            @if (ViewBag.Productos != null && ViewBag.Productos.Count > 0)
+            {
+                @for (int i = 0; i < ViewBag.Productos.Count; i++)
+                {
+                    var p = ViewBag.Productos[i];
+                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="/images/productos/@p.ImagenPrincipal"
+                                         class="card-img-top"
+                                         style="height: 200px; object-fit: cover;"
+                                         alt="@p.Nombre" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">@p.Nombre</h5>
+                                        <p class="text-muted">@p.Categoria</p>
+                                        <p class="fw-bold text-success fs-5">
+                                            S/. @p.Precio
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <p>No hay productos disponibles.</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        <!-- Indicadores -->
+        @if (ViewBag.Productos != null && ViewBag.Productos.Count > 0)
+        {
+            <div class="carousel-indicators">
+                @for (int i = 0; i < ViewBag.Productos.Count; i++)
+                {
+                    <button type="button"
+                            data-bs-target="#productosCarousel"
+                            data-bs-slide-to="@i"
+                            class="@(i == 0 ? "active" : "")"
+                            aria-current="@(i == 0 ? "true" : "false")"
+                            aria-label="Slide @(i + 1)"></button>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold text-primary">Quiénes Somos</h1>
+        <p class="lead text-muted">Conoce más sobre nuestra bodega</p>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="~/images/bodega.jpg" alt="Nuestra bodega" class="img-fluid rounded shadow" />
+        </div>
+
+        <div class="col-md-6">
+            <h3 class="fw-bold">Bodega “El Buen Vecino”</h3>
+            <p>
+                Somos una bodega local dedicada a ofrecer productos de primera necesidad a precios justos.
+                Nacimos con el compromiso de brindar un servicio rápido, amable y de confianza a nuestra comunidad.
+            </p>
+            <p>
+                Contamos con productos de abarrotes, limpieza, bebidas y mucho más. ¡Queremos ser tu tienda de confianza
+                en el barrio, como un Tambo, pero con ese toque familiar y cercano que nos caracteriza!
+            </p>
+            <ul class="list-unstyled mt-3">
+                <li><i class="fa-solid fa-check text-success"></i> Atención personalizada</li>
+                <li><i class="fa-solid fa-check text-success"></i> Precios accesibles</li>
+                <li><i class="fa-solid fa-check text-success"></i> Productos frescos y variados</li>
+            </ul>
+        </div>
+    </div>
+</div>
